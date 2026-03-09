@@ -17,20 +17,17 @@
 
 
 ## News
-
-
-## News
-- [x] **`Feb XX, 2026.`** We released MM-DeepResearch and made the paper available on [arxiv](https://arxiv.org/abs/2412.18319).
+- [x] **`Mar 1, 2026.`** We released MM-DeepResearch and made the paper available on [arxiv](https://arxiv.org/abs/2603.01050).
 
 
 ## Citation
 If you find this repository is useful, please star🌟 this repo and cite🖇️ our paper.
 ```bibtex
-@article{yao2024mulberry,
-  title={Mulberry: Empowering mllm with o1-like reasoning and reflection via collective monte carlo tree search},
-  author={Yao, Huanjin and Huang, Jiaxing and Wu, Wenhao and Zhang, Jingyi and Wang, Yibo and Liu, Shunyu and Wang, Yingjie and Song, Yuxin and Feng, Haocheng and Shen, Li and others},
-  journal={arXiv preprint arXiv:2412.18319},
-  year={2024}
+@article{yao2026mm,
+  title={MM-DeepResearch: A Simple and Effective Multimodal Agentic Search Baseline},
+  author={Yao, Huanjin and Yin, Qixiang and Yang, Min and Zhao, Ziwang and Wang, Yibo and Luo, Haotian and Zhang, Jingyi and Huang, Jiaxing},
+  journal={arXiv preprint arXiv:2603.01050},
+  year={2026}
 }
 ```
 
