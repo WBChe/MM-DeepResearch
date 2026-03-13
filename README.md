@@ -20,7 +20,7 @@
 - [x] **`Mar 13, 2026.`** We released the evaluation code and the [model](https://huggingface.co/HuanjinYao/MM-DeepResearch-8B). The training code will be open-sourced soon!
 - [x] **`Mar 1, 2026.`** We released MM-DeepResearch and made the paper available on [arxiv](https://arxiv.org/abs/2603.01050).
 
-## 🔍 Eval
+## 🔍 Evaluation
 ### Step 1: Launch the deep research agent and the judge/summary model.
 
 Start the deep research agent first:
