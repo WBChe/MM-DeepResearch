@@ -19,6 +19,34 @@
 ## News
 - [x] **`Mar 1, 2026.`** We released MM-DeepResearch and made the paper available on [arxiv](https://arxiv.org/abs/2603.01050).
 
+## Eval
+### Step 1: Launch the deep research agent and the judge/summary model with [vLLM](https://docs.vllm.ai/en/latest/) or [SGLang](https://docs.sglang.io/index.html).
+
+Start the deep research agent first:
+
+```
+CUDA_VISIBLE_DEVICES=0,1 python -m sglang.launch_server \
+    --model-path HuanjinYao/MM-DeepResearch-8B \
+    --port 8000  \
+    --tp-size 2 \
+    --host 0.0.0.0 \
+    --context-length 262144 \
+    --trust-remote-code
+```
+
+----------
+
+Then launch the judge/summary model. We recommend [Qwen3.5-35B-A3B](https://huggingface.co/Qwen/Qwen3.5-35B-A3B) or [Qwen3-Next-80B-A3B-Instruct](https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct) as the judge and summary model here. In general, larger models provide more reliable judgment and higher-quality summaries.
+```
+CUDA_VISIBLE_DEVICES=4,5,6,7 python -m sglang.launch_server \
+    --model-path Qwen/Qwen3.5-35B-A3B \
+    --port 9000 \
+    --tp-size 4 \
+    --mem-fraction-static 0.85 \
+    --host 0.0.0.0 \
+    --context-length 262144
+```
+
 
 ## Citation
 If you find this repository is useful, please star🌟 this repo and cite🖇️ our paper.
