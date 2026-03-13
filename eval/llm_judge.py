@@ -6,7 +6,7 @@ import re
 from prompt import JUDGE_SYSTEM_PROMPT, JUDGE_USER_PROMPT
 
 openai_api_key = "EMPTY"
-openai_api_base = "http://10.124.162.81:9000/v1"
+openai_api_base = "http://localhost:9000/v1"
 
 client = OpenAI(
     api_key=openai_api_key,
