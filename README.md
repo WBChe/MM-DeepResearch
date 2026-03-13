@@ -51,10 +51,10 @@ CUDA_VISIBLE_DEVICES=4,5,6,7 python -m sglang.launch_server \
 ### Step 2: Prepare the test dataset and search APIs for evaluation
 
 **Dataset.**  
-The test dataset format is the same as that used in VeRL. We provide an example in `XXX`. You can run the following script to generate the test dataset:
+The test dataset format is the same as that used in VeRL. You can download the test dataset [here](https://huggingface.co/datasets/HuanjinYao/MM-DeepResearch-corpus/blob/main/MMSearch_test.parquet) or run the following script to generate the test dataset:
 
 ```bash
-python3 ...
+python3 eval/data_preprocess/preprocess_MMSearch.py
 ```
 
 In addition, you need to prepare the search APIs required for evaluation. We currently support SerpAPI and Serper. And Jina Reader API is required
@@ -62,14 +62,16 @@ In addition, evaluation requires access to search APIs (support [SerpAPI](https:
 
 ### Step 3: Complete the code for image-to-image search
 
-Since [image-to-image search](https://serpapi.com/google-lens-api) only supports searches using publicly accessible image URLs, you need to implement an image upload step that uploads local images to a public server and obtains public URLs for search.
-
+Since [image-to-image search](https://serpapi.com/google-lens-api) only supports searches using publicly accessible image URLs, you need to implement an image upload step [here](https://github.com/HJYao00/MM-DeepResearch/blob/main/eval/tool_image_search_lens.py#L163) that uploads local images to a public server and obtains public URLs for search.
+> **Note:** We highly recommend uploading the input images in advance to avoid potential upload errors during evaluation.
+> 
 ### Step 4: Run evaluation
 
 Finally, you can start the evaluation with the following command:
 
 ```bash
-bash
+cd eval
+bash scripts/run_eval_mmsearch_search_mp.sh
 ```
 
 
