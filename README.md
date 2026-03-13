@@ -48,16 +48,6 @@ CUDA_VISIBLE_DEVICES=4,5,6,7 python -m sglang.launch_server \
     --context-length 262144
 ```
 
-### Step 2: Prepare the test dataset and Search API used in Evaluation
-
-Dataset. The test dataset formats are the same in VeRL. We provide an example in XXX. And you can run the code to generate test dataset.
-```bash
-python3 ....
-```
-
-Then, you need to prepare search API, SerpAPI and Serper are both supported here, and Jina Reader
-
-
 ### Step 2: Prepare the test dataset and search APIs for evaluation
 
 **Dataset.**  
