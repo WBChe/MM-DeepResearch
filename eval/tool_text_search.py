@@ -10,7 +10,7 @@ from serpapi import GoogleSearch
 
 
 OPENAI_API_KEY = os.getenv("JUDGE_OPENAI_API_KEY", "EMPTY")
-OPENAI_API_BASE = os.getenv("JUDGE_OPENAI_API_BASE", "http://10.124.162.81:9000/v1")
+OPENAI_API_BASE = os.getenv("JUDGE_OPENAI_API_BASE", "http://localhost:9000/v1")
 JUDGE_MODEL = os.getenv("JUDGE_MODEL", "judge_model")
 
 SERPAPI_LOG_PATH_LIST = [
