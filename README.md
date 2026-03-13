@@ -16,10 +16,11 @@
 </div>
 
 
-## News
+## 🔔 News
+- [x] **`Mar 13, 2026.`** We released the eval code and [model](https://huggingface.co/HuanjinYao/MM-DeepResearch-8B). 
 - [x] **`Mar 1, 2026.`** We released MM-DeepResearch and made the paper available on [arxiv](https://arxiv.org/abs/2603.01050).
 
-## Eval
+## 🔍 Eval
 ### Step 1: Launch the deep research agent and the judge/summary model.
 
 Start the deep research agent first:
@@ -82,7 +83,7 @@ bash
 ```
 
 
-## Citation
+## 🔗 Citation
 If you find this repository is useful, please star🌟 this repo and cite🖇️ our paper.
 ```bibtex
 @article{yao2026mm,
@@ -94,7 +95,7 @@ If you find this repository is useful, please star🌟 this repo and cite🖇️
 ```
 
 
-## Acknowledgment
+## 🙏 Acknowledgment
 Our work is primarily based on the following codebases. We are sincerely grateful for their work.
 - [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory): Used for supervised fine-tuning of our base multimodal models.
 - [VeRL](https://github.com/hiyouga/LLaMA-Factory): Used to perform multi-turn agentic reinforcement learning.
